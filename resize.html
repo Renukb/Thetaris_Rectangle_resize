@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rectangle resize task</title>
+
+    <style>
+      body,
+      html {
+        background: white;
+      }
+      .resizablerect {
+        background: darkcyan;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+
+      .resizablerect .resizer {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: orange;
+        border: black;
+        position: absolute;
+      }
+
+      .resizablerect .resizer.circle {
+        right: -5px;
+        bottom: -5px;
+        cursor: nwse-resize;
+      }
+    </style>
+
+    <script type="text/javascript" src="resizeRect.js"></script>
+  </head>
+
+  <body>
+    <div class="resizablerect">
+      <div class="resizer circle"></div>
+    </div>
+  </body>
+</html>
